@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
+import TopBar from "./topbar/TopBar";
+import Home from "./pages/home/Home";
+import Sidebar from "./sidebar/Sidebar";
+import Single from "./pages/single/Single";
+import Write from "./pages/write/Write";
+import Settings from "./settings/Settings";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+   <TopBar></TopBar>
+   <Switch>
+      <Route exact path ="/">
+        <Home></Home>
+      </Route>
+
+      <Route path ="/single">
+        <Single></Single>
+      </Route>
+
+      <Route path ="/write">
+        <Write></Write>
+      </Route>
+
+      <Route path ="/settings">
+        <Settings></Settings>
+      </Route>
+
+      <Route path ="/post/:postId">
+        <Single></Single>
+      </Route>
+   </Switch>
+   {/* <Single/> */}
+   {/* <Home></Home> */}
+   {/* <Write></Write> */}
+
+   </Router>
   );
 }
 
