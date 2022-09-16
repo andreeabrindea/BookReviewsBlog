@@ -9,6 +9,7 @@
   font-family: "EB Garamond", serif;
   z-index: 999;
 }
+
 .topLeft,
 .topRight {
   flex: 3;
@@ -17,11 +18,13 @@
   background-color: white;
   justify-content: center;
 }
+
 .TopIcon {
   font-size: 20px;
   margin: 10px;
   cursor: pointer;
 }
+
 .topCenter {
   flex: 6;
 }
@@ -33,16 +36,19 @@
   list-style: none;
   padding: 0;
 }
+
 .TopListItem {
   margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
 }
+
 .SearchIcon {
   font-size: 15px;
   cursor: pointer;
 }
+
 .UserIcon {
   font-size: 19px;
   cursor: pointer;

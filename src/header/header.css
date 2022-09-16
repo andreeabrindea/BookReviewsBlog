@@ -2,22 +2,26 @@
   margin-top: 60px;
   position: relative;
 }
+
 .headerTitles {
   display: flex;
   flex-direction: column;
   font-family: "EB Garamond", serif;
   align-items: center;
 }
+
 .welcomeText {
   position: absolute;
   top: 18%;
   font-size: 20px;
 }
+
 .titleText {
   position: absolute;
   top: 20%;
   font-size: 70px;
 }
+
 .headerImg {
   width: 100%;
   height: 350;
@@ -25,5 +29,4 @@
   object-fit: cover;
   opacity: 50;
   border-radius: 6px;
-
 }

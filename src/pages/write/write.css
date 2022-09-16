@@ -1,6 +1,7 @@
 .write {
   padding-top: 50px;
 }
+
 .writeForm {
   position: relative;
 }
@@ -36,6 +37,7 @@
   width: 900px;
   height: 900px;
 }
+
 .writeSubmit {
   position: absolute;
   top: 10px;
@@ -47,6 +49,7 @@
   border-radius: 6px;
   cursor: pointer;
 }
+
 .writeImg {
   margin-left: 150px;
   margin-bottom: 10px;

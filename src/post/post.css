@@ -6,16 +6,19 @@
   display: flex;
   flex-direction: column;
 }
+
 .imgPost {
   width: 330px;
   height: 250px;
   object-fit: cover;
   border-radius: 6px;
 }
+
 .postInfo {
   display: flex;
   flex-direction: column;
 }
+
 .postCategories {
   font-family: "Dancing Script", cursive;
   font-size: 15px;
@@ -27,6 +30,7 @@
   cursor: pointer;
   text-align: left;
 }
+
 .postTitle {
   font-family: "EB Garamond", serif;
   font-size: 20px;
@@ -35,6 +39,7 @@
   cursor: pointer;
   text-align: center;
 }
+
 .postDate {
   font-family: "EB Garamond", serif;
   font-size: 13px;
@@ -42,6 +47,7 @@
   margin-top: 5px;
   text-align: right;
 }
+
 .description {
   font-family: "EB Garamond", serif;
   font-size: 16px;
