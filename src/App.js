@@ -4,6 +4,7 @@ import Sidebar from "./sidebar/Sidebar";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Settings from "./settings/Settings";
+import Login from "./login/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -29,6 +30,11 @@ function App() {
       <Route path ="/post/:postId">
         <Single></Single>
       </Route>
+
+      <Route path ="/login">
+        <Login></Login>
+      </Route>
+
    </Switch>
    {/* <Single/> */}
    {/* <Home></Home> */}

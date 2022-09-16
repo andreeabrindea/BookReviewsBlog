@@ -1,0 +1,8 @@
+.login{
+    display: flex;
+}
+.loginForm{
+    flex: 9;
+    align-items: center;
+    padding: 10px;
+}
