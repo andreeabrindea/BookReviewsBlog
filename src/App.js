@@ -7,6 +7,7 @@ import Login from "./login/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Register from "./pages/register/Register";
 function App() {
+  const user = true;
   return (
     <Router>
       <TopBar></TopBar>
@@ -20,23 +21,21 @@ function App() {
         </Route>
 
         <Route path="/write">
-          <Write></Write>
+          {user ? <Write></Write> : <Register></Register>}
         </Route>
 
         <Route path="/settings">
-          <Settings></Settings>
+          {user ? <Settings></Settings> : <Register></Register>}
         </Route>
 
         <Route path="/post/:postId">
           <Single></Single>
         </Route>
 
-        <Route path="/login">
-          <Login></Login>
-        </Route>
+        <Route path="/login">{user ? <Home></Home> : <Login></Login>}</Route>
 
         <Route path="/register">
-          <Register></Register>
+          {user ? <Home></Home> : <Register></Register>}
         </Route>
       </Switch>
     </Router>
