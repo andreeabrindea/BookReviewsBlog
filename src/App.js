@@ -4,21 +4,17 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Settings from "./settings/Settings";
 import Login from "./login/Login";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from "./pages/register/Register";
 function App() {
   const user = true;
   return (
     <Router>
       <TopBar></TopBar>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-        <Route path="/single">
-          <Single></Single>
-        </Route>
+        <Route path="/single" element={<Single />} / >
 
         <Route path="/write">
           {user ? <Write></Write> : <Register></Register>}
@@ -37,7 +33,7 @@ function App() {
         <Route path="/register">
           {user ? <Home></Home> : <Register></Register>}
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
