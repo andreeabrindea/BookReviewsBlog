@@ -1,5 +1,4 @@
 import "./login.css";
-import Settings from "../settings/Settings";
 import photo from "../settings/user17.png";
 import Sidebar from "../sidebar/Sidebar";
 console.log(photo);

@@ -1,5 +1,4 @@
 import "./singlePost.css";
-import Sidebar from "../../sidebar/Sidebar";
 import photo from "../../post/bookpost.jpg";
 console.log(photo);
 export default function SinglePost() {
